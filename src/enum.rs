@@ -68,7 +68,7 @@ impl Enum {
 
     /// Add a macro to the enum block (e.g. `"#[serde(untagged)]"`)
     pub fn r#macro(&mut self, r#macro: &str) -> &mut Self {
-        self.macros.push(r#macro.to_string());
+        self.type_def.r#macro(r#macro);
         self
     }
 
