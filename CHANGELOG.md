@@ -1,5 +1,9 @@
 # <future version>
 
+### Added
+
+- Enum macros
+
 ### Changed
 - updated the crate to rust 2018 edition
 
