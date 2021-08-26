@@ -96,6 +96,12 @@ impl Struct {
         self
     }
 
+    /// Add a macro to the enum block (e.g. `"#[Object]"`)
+    pub fn r#macro(&mut self, r#macro: &str) -> &mut Self {
+        self.type_def.r#macro(r#macro);
+        self
+    }
+
     /// Add a tuple field to the struct.
     ///
     /// A struct can either set tuple fields with this function or named fields
